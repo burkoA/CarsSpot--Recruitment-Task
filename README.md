@@ -1,6 +1,6 @@
 <h1>CarsSpot Recruitment Task</h1>
 <p>This project is a one-page website developed as part of the company's terms of reference.</p>
-<p>The page can be viewed here -> <a href=""></a></p>
+<p>The page can be viewed here -> <a href="https://venerable-rugelach-9ff648.netlify.app/">*Click*</a></p>
 
 <h2>Description✍️</h2>
 <p>The page was created using <code>HTML, Tailwind CSS, and JavaScript (Swiper.js for the image slider)</code>. The project supports responsive design and interactive switching between two image categories: "self-driving facial" and "self-driving delivery".</p>
