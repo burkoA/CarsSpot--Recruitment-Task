@@ -6,7 +6,7 @@
     "swiper": "^11.1.12"
   },
   "scripts": {
-    "build": "npx tailwindcss -i ./src/style.css -o ./src/output.css --minify",
-    "start": "npx tailwindcss -i ./src/style.css -o ./src/output.css --watch"
+    "build:css": "tailwindcss -i ./src/style.css -o ./public/output.css",
+    "watch:css": "tailwindcss -i ./src/style.css -o ./public/output.css --watch"
   }
 }
