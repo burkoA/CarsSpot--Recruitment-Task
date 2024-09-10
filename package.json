@@ -1,13 +1,12 @@
 {
-  "name": "CarsSpot--Recruitment-Task",
-  "version": "1.0.0",
-  "scripts": {
-    "build": "npx tailwindcss -i ./src/style.css -o ./src/output.css"
-  },
   "devDependencies": {
     "tailwindcss": "^3.4.10"
   },
   "dependencies": {
     "swiper": "^11.1.12"
+  },
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/style.css -o ./src/output.css --minify",
+    "start": "npx tailwindcss -i ./src/style.css -o ./src/output.css --watch"
   }
 }
