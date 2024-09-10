@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="../src/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>CarsSpot</title>
+</head>
+
+<body>
+
+    <!--Header-->
+    <header class="relative flex justify-between items-center py-4 h-[79px] px-20 z-10 sm:px-2">
+
+        <!--Logo-->
+        <div class="flex items-center px-5">
+            <svg width="26" height="29" viewBox="0 0 26 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7964 0.665387C15.6108 1.01892 16.0947 1.86706 15.9846 2.74806L15.0656 10.1H23.6C24.3761 10.1 25.082 10.5489 25.4112 11.2517C25.7404 11.9544 25.6333 12.7842 25.1365 13.3804L13.1365 27.7804C12.5681 28.4624 11.6181 28.6881 10.8036 28.3346C9.98921 27.9811 9.50534 27.1329 9.61547 26.2519L10.5345 18.9H2.00002C1.22399 18.9 0.518005 18.4511 0.188846 17.7483C-0.140314 17.0455 -0.0332238 16.2158 0.463582 15.6196L12.4636 1.21962C13.032 0.537553 13.982 0.311849 14.7964 0.665387ZM6.27011 14.9H12.8C13.3737 14.9 13.9197 15.1463 14.2994 15.5764C14.679 16.0064 14.8557 16.5788 14.7846 17.1481L14.4307 19.9791L19.3299 14.1H12.8C12.2264 14.1 11.6803 13.8537 11.3007 13.4236C10.921 12.9935 10.7443 12.4212 10.8155 11.8519L11.1693 9.0209L6.27011 14.9Z" fill="#0147FF" />
+            </svg>
+            <span class="text-3xl font-bold ml-2 font-noto">Cars<span class="text-blue-600">Spot</span></span>
+        </div>
+
+        <!-- Nav -->
+        <nav class="sm:hidden flex gap-6 text-lg font-roboto">
+            <a href="#" class="hover:text-blue-600">Galeria zdjęć</a>
+            <a href="#" class="hover:text-blue-600">FaQ</a>
+        </nav>
+
+        <!--Header Button-->
+        <button class="sm:hidden block bg-blue-600 text-white px-5 py-3 rounded-md hover:bg-blue-700">Zadzwoń do nas</button>
+
+        <!-- Hamburger Button for mobile -->
+        <button id="menu-btn" class="sm:block hidden focus:outline-none">
+            <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+
+    </header>
+
+    <!-- Mobile Menu (Hidden initially) -->
+    <nav id="mobile-menu" class="hidden fixed top-[79px] left-0 flex-col gap-2 text-center text-lg font-roboto p-4 shadow-md bg-gray-50 w-full z-20">
+        <a href="#" class="block py-2 hover:bg-blue-600 hover:text-white">Galeria zdjęć</a>
+        <a href="#" class="block py-2 hover:bg-blue-600 hover:text-white">FaQ</a>
+        <button class="bg-blue-600 text-white px-5 py-3 rounded-md hover:bg-blue-700 w-full">Zadzwoń do nas</button>
+    </nav>
+
+    <!--Main Section-->
+    <section class="relative flex items-center justify-between w-full h-[600px] px-20 sm:px-0 sm:mt-5">
+        <div class="flex flex-col items-start justify-center px-8 w-1/2 gap-6 z-10 sm:w-1/2">
+
+            <h1 class="text-6xl font-bebas text-gray-900 leading-tight uppercase md:whitespace-nowrap lg:whitespace-nowrap">Sprzedajemy samochody <br /> z europy</h1>
+            <p class="text-xl font-roboto mb-5 sm:text-sm sm:whitespace-nowrap md:whitespace-nowrap">
+                Kup komfortowy pojazd, aby każda podróż <br /> była wyjątkowym przeżyciem.
+            </p>
+
+            <!--Buttons-->
+            <div class="flex gap-4 text-lg">
+                <button class="bg-blue-600 text-white px-6 py-3 md:px-8 rounded-lg hover:bg-blue-700 sm:text-base">Zobacz zdjęcia</button>
+                <button class="border border-blue-700 text-blue-700 px-6 py-3 rounded-lg hover:bg-gray-300 sm:text-base">Zadzwoń do nas</button>
+            </div>
+
+        </div>
+
+        <!--SVG Lines-->
+        <div class="absolute right-6 top-[-100px] w-[700px] h-[700px] z-0 sm:hidden md:hidden lg:hidden">
+            <svg width="669" height="659" viewBox="0 0 669 659" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5283 474.524C-10.6642 533.878 -0.133859 602.299 13.1608 659L64.5864 659C49.8623 598.957 41.0799 542.433 64.0947 497.192L64.0961 497.189C81.6023 462.766 117.192 437.648 158.248 421.817L158.255 421.814C187.08 410.689 216.19 404.17 247.283 397.207L247.284 397.207C261.793 393.957 276.733 390.611 292.279 386.656L292.287 386.654C339.132 374.716 390.112 356.73 429.54 320.437C448.427 303.056 467.769 277.713 470.65 246.058C474.973 198.673 441.361 160.675 411.163 139.282C398.363 130.214 384.602 122.407 372.141 115.338L372.14 115.337L372.139 115.337L372.132 115.333C369.856 114.042 367.624 112.775 365.448 111.53C350.783 103.136 338.003 95.3463 326.983 85.9456C301.833 64.4857 285.426 32.851 281.904 -1.23224e-05L231.699 -1.01279e-05C235.328 47.4375 258.257 93.0316 294.528 123.981L294.53 123.983C309.382 136.653 325.704 146.393 340.61 154.925C343.109 156.355 345.558 157.746 347.961 159.111C360.446 166.205 371.686 172.591 382.26 180.082C407.563 198.007 422.716 221.153 420.857 241.52L420.856 241.526C419.593 255.408 410.44 270.064 395.682 283.646L395.68 283.648C365.62 311.317 324.609 326.819 279.948 338.2C267.43 341.385 254.174 344.362 240.534 347.424C207.702 354.796 172.639 362.669 140.259 375.165C93.2052 393.309 44.8302 424.772 19.5283 474.524ZM441.28 -1.9289e-05C444.605 29.1032 467.248 56.7499 498.039 79.4937L498.046 79.4983C509.204 87.7458 520.505 95.0516 532.517 102.817L532.518 102.817L532.518 102.818L532.52 102.819L532.526 102.823C538.183 106.48 543.998 110.239 550.029 114.246C568.133 126.275 587.041 139.852 603.721 157.001L603.724 157.003C653.129 207.784 673.041 280.884 666.999 348.774C660.648 420.139 615.235 463.522 577.547 499.525L577.543 499.529C572.569 504.281 567.729 508.904 563.132 513.446C542.401 533.927 525.458 553.179 515.067 576.195C505.479 597.434 500.784 623.493 506.762 659L456.196 659C450.701 618.298 456.371 584.695 469.495 555.622C483.857 523.809 506.395 499.214 527.991 477.877C533.216 472.715 538.356 467.741 543.367 462.89C581.732 425.758 612.61 395.871 617.196 344.342C622.196 288.157 605.324 230.348 567.884 191.868L567.882 191.865C554.982 178.603 539.639 167.373 522.36 155.892C517.452 152.632 512.259 149.273 506.919 145.819L506.918 145.818C494.26 137.63 480.778 128.91 468.333 119.712L468.327 119.708C432.982 93.5998 394.485 52.8976 391.095 -1.70953e-05L441.28 -1.9289e-05Z" fill="#D9DCD5" />
+            </svg>
+        </div>
+
+        <!--Car Background-->
+        <div class="absolute bottom-[-80px] right-0 w-[70%] h-auto z-10 overflow-hidden sm:w-7/10 2xl:w-1/2 2xl:bottom-[-150px]">
+            <img src="./img/phone-removebg-preview.png" alt="Background Car" class="w-full h-full">
+        </div>
+
+    </section>
+
+    <!--Main-->
+    <section class="mt-40 sm:mt-10 flex flex-col">
+
+        <!-- Header Main -->
+        <div class="pl-24 flex flex-col align-middle pt-20 sm:pl-8 flex-grow">
+            <p class="text-blue-700 text-2xl font-roboto mb-2">Prezentacja firmy</p>
+            <h2 class="mb-6 text-5xl font-bebas">ZOBACZ NASZĄ GALERIĘ ZDJĘĆ</h2>
+
+            <!-- Buttons for car -->
+            <div class="flex space-x-10 font-roboto text-lg sm:text-sm sm:space-x-2">
+                <a href="#" id="personal-link" class="text-blue-700 underline underline-offset-4">Samochody osobowe</a>
+                <a href="#" id="delivery-link">Samochody dostawcze</a>
+            </div>
+
+            <!-- Image Container -->
+            <div id="slider-container" class="swiper-container overflow-hidden my-12 w-full sm:w-full md:w-full">
+                <div class="swiper-wrapper" id="image-wrapper">
+                    <!-- Динамічне завантаження зображень -->
+                </div>
+            </div>
+
+            <!-- Image Pagination -->
+
+
+        </div>
+
+        <div class="swiper-pagination-custom mb-16"></div>
+    </section>
+
+    <!--Footer-->
+    <footer class="bg-zinc-800">
+        <!--Seo Block-->
+        <div class="flex px-28 items-start py-[88px] gap-[80px] bg-zinc-800 sm:px-8 sm:gap-5">
+
+            <!--First block-->
+            <div class="text-white w-1/2">
+                <h2 class="text-3xl mb-4 font-bebas uppercase sm:text-xl">ID NOSTRUD ENIM ESSE CONSECTETUR IN EU MOLLIT FUGIAT AUTE. VELIT NULLA COMMODO.</h2>
+                <p class="seo-text mb-6 font-condensed sm:text-sm">
+                    Mauris varius ipsum mauris, rutrum lobortis magna efficitur.
+                    Donec egestas, nisi vehicula feugiat ornare, diam turpis efficitur mi,
+                    ac venenatis eros ipsum ac arcu. Vestibulum et Mauris varius ipsum mauris,
+                    rutrum lobortis magna efficitur. Donec egestas, nisi vehicula feugiat ornare,
+                    diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et Mauris
+                    varius ipsum mauris, rutrum lobortis magna efficitur. Donec egestas, nisi
+                    vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac
+                    arcu. Vestibulum et
+                </p>
+                <button class="toggle-btn flex items-center space-x-2 border-b-2 sm:text-sm">
+                    <span>Rozwiń</span>
+                    <span>&#8595;</span>
+                </button>
+            </div>
+
+            <!--Second block-->
+            <div class="text-white w-1/2">
+                <h2 class="text-3xl mb-4 font-bebas uppercase sm:text-xl">ID NOSTRUD ENIM ESSE CONSECTETUR IN EU MOLLIT FUGIAT AUTE. VELIT NULLA COMMODO.</h2>
+                <p class="seo-text mb-6 font-condensed sm:text-sm">
+                    Mauris varius ipsum mauris, rutrum lobortis magna efficitur.
+                    Donec egestas, nisi vehicula feugiat ornare, diam turpis efficitur mi,
+                    ac venenatis eros ipsum ac arcu. Vestibulum et Mauris varius ipsum mauris,
+                    rutrum lobortis magna efficitur. Donec egestas, nisi vehicula feugiat ornare,
+                    diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et Mauris
+                    varius ipsum mauris, rutrum lobortis magna efficitur. Donec egestas, nisi
+                    vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac
+                    arcu. Vestibulum et
+                </p>
+                <button class="toggle-btn flex items-center space-x-2 border-b-2 sm:text-sm">
+                    <span>Rozwiń</span>
+                    <span>&#8595;</span>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="flex bg-zinc-800 py-6 px-24 justify-between border-t border-t-white mt-5 sm:px-6">
+            <div class="text-white font-roboto text-lg sm:text-sm">Cars Spot</div>
+            <div class="text-white underline underline-offset-1 font-condensed text-lg sm:text-sm">
+                <a href="#" id="open-modal-link">Polityka prywatności</a>
+            </div>
+        </div>
+
+        <!--Privacy Window-->
+        <div id="privacy-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+            <div class="bg-white max-w-lg rounded-lg p-6 relative max-h-[80vh] overflow-y-auto">
+                <h2 class="text-2xl font-bold mb-4">Polityka Prywatności</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus at dui nulla. Integer feugiat, nisl ut egestas ultricies, turpis arcu condimentum felis, non cursus
+                    libero nisi a nulla. Donec sit amet urna ornare, vehicula nisl nec, gravida sapien.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus at dui nulla. Integer feugiat, nisl ut egestas ultricies, turpis arcu condimentum felis, non cursus
+                    libero nisi a nulla. Donec sit amet urna ornare, vehicula nisl nec, gravida sapien.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus at dui nulla. Integer feugiat, nisl ut egestas ultricies, turpis arcu condimentum felis, non cursus
+                    libero nisi a nulla. Donec sit amet urna ornare, vehicula nisl nec, gravida sapien.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus at dui nulla. Integer feugiat, nisl ut egestas ultricies, turpis arcu condimentum felis, non cursus
+                    libero nisi a nulla. Donec sit amet urna ornare, vehicula nisl nec, gravida sapien.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus at dui nulla. Integer feugiat, nisl ut egestas ultricies, turpis arcu condimentum felis, non cursus
+                    libero nisi a nulla. Donec sit amet urna ornare, vehicula nisl nec, gravida sapien.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus at dui nulla. Integer feugiat, nisl ut egestas ultricies, turpis arcu condimentum felis, non cursus
+                    libero nisi a nulla. Donec sit amet urna ornare, vehicula nisl nec, gravida sapien.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+
+                <!--Privacy Close Button-->
+                <button id="close-modal-btn" class="text-2xl absolute top-2 right-2 text-gray-500 hover:text-black">
+                    &times;
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/rollText.js"></script>
+    <script src="./js/politicalWindow.js"></script>
+    <script src="./js/burgerMenu.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/galleryNav.js" defer></script>
+</body>
+
+</html>

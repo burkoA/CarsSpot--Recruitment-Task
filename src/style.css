@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .swiper-pagination-custom {
+        @apply flex justify-center gap-x-2;
+    }
+
+    .swiper-pagination-bullet-custom {
+        @apply w-2 h-2 bg-gray-300 rounded-full;
+    }
+
+    .swiper-pagination-bullet-active {
+        @apply bg-blue-600;
+    }
+}
